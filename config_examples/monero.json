@@ -1,5 +1,5 @@
 {
-    "poolHost": "your.pool.host",
+    "poolHost": "0.0.0.0",
 
     "coin": "monero",
     "symbol": "XMR",
@@ -27,7 +27,7 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "** Your pool wallet address **",
+        "poolAddress": "9wviCeWe2D8XS82k2ovp5EUYLzBt9pYNW2LXUFsZiv8S3Mt21FZ5qQaAroko1enzw3eGr9qC7X1D7Geoo2RrAotYPwq9Gm8",
         "intAddressPrefix": 19,
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
@@ -146,13 +146,13 @@
     },
 
     "daemon": {
-        "host": "127.0.0.1",
-        "port": 18081
+        "host": "10.0.75.1",
+        "port": 28081
     },
 
     "wallet": {
-        "host": "127.0.0.1",
-        "port": 18082
+        "host": "10.0.75.1",
+        "port": 28082
     },
 
     "redis": {

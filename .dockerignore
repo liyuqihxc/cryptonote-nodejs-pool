@@ -1,0 +1,5 @@
+.git
+node_modules
+config_examples
+redis.conf
+start.cmd
