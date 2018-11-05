@@ -146,12 +146,12 @@
     },
 
     "daemon": {
-        "host": "10.0.75.1",
+        "host": "host.docker.internal",
         "port": 28081
     },
 
     "wallet": {
-        "host": "10.0.75.1",
+        "host": "host.docker.internal",
         "port": 28082
     },
 
