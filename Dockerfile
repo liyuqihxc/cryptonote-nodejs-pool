@@ -6,6 +6,11 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ADD . /pool/
 WORKDIR /pool/
 
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
+  echo 'deb http://mirrors.163.com/debian/ jessie main non-free contrib' > /etc/apt/sources.list && \
+  echo 'deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib' >> /etc/apt/sources.list && \
+  echo 'deb http://mirrors.163.com/debian-security/ jessie/updates main non-free contrib' >> /etc/apt/sources.list
+
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs-legacy npm git libboost1.55-all libssl-dev \
   && rm -rf /var/lib/apt/lists/* \
